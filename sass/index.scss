@@ -1,13 +1,22 @@
+@import "./utils/mixin";
+
+// -----------Font-roots---------
+
+:root {
+  --primary-font: "DM Sans", sans-serif;
+  --titan-font: "Titan One", cursive;
+}
+
+// ----------Styles-------
+
 body {
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
+  font-family: var(--primary-font);
 }
 .title {
   max-width: 277px;
-  font-family: "Titan One", cursive;
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 1.157;
+  padding: 20px;
+  font-family: var(--titan-font);
+  @include font(400, 38px, 44px);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
@@ -15,8 +24,7 @@ body {
 }
 
 .title-accent {
-  font-size: 46px;
-  line-height: 1.157;
+  @include font(400, 58px, 52px);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
