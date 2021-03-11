@@ -11,7 +11,17 @@
 
 body {
   font-family: var(--primary-font);
+  font-size: 12px;
+
+  @media screen and (min-width: 700px) and (max-width: 1049px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1050px) {
+    font-size: 16px;
+  }
 }
+
 .title {
   max-width: 277px;
   padding: 20px;
@@ -28,4 +38,15 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+.btn {
+  height: 40px;
+  min-width: 104px;
+  border: transparent;
+  border-radius: 20px;
+
+  background-color: #d41443;
+  color: #ffffff;
+  @include font(400, 14px, 18px);
 }

@@ -5,6 +5,19 @@
 
 body {
   font-family: var(--primary-font);
+  font-size: 12px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1049px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 .title {
@@ -27,5 +40,17 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+.btn {
+  height: 40px;
+  min-width: 104px;
+  border: transparent;
+  border-radius: 20px;
+  background-color: #d41443;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.286;
 }
 /*# sourceMappingURL=index.css.map */
