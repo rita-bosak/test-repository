@@ -26,16 +26,14 @@ body {
   max-width: 277px;
   padding: 20px;
   font-family: var(--titan-font);
-  @include font(400, 38px, 44px);
-  letter-spacing: 0.04em;
+  @include font(400, 38px, 44px, 0.04em);
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ffb8ca;
 }
 
 .title-accent {
-  @include font(400, 58px, 52px);
-  letter-spacing: 0.04em;
+  @include font(400, 58px, 52px, 0.04em);
   text-transform: uppercase;
   color: #d41443;
 }

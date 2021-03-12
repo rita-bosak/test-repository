@@ -34,10 +34,11 @@
 
 // ---FONT-MIXIN---
 
-@mixin font($fw, $fs, $lh) {
+@mixin font($fw, $fs, $lh, $ls: normal) {
   font-weight: $fw;
   font-size: $fs;
   line-height: decimal-round($lh/$fs, 3);
+  letter-spacing: $ls;
 }
 
 // чтобы использовать миксин в стилях, пишем     @include font();
